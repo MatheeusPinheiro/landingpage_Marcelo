@@ -21,174 +21,13 @@ body{
 }
 
 
-/* header */
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    padding: 20px 0;
-    align-items: center;
-}
-
-
-header .container .logo{
-    display: flex;
-    flex-direction: column;
-}
-
-
-header .container .logo span{
-    color: orange;
-    font-weight: bold;
-    font-size: 32px;
-    letter-spacing: 4px;
-}
-
-header .container .menu nav ul{
-    display: flex;
-}
-
-
-header .container .menu nav ul li{
-    list-style: none;
-}
-
-header .container .menu nav ul a{
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-
-
-/* Banner */
-
-
-.banner .container{
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.banner .container .left,
-.banner .container .right{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 80px 40px;
-}
-
-
-.banner .container .left{
-    background-color: rgba(245, 169, 27, 0.938);
-    color: #FFF;
-    border-top-left-radius: 20px;
-}
-
-
-.banner .container .left .incricao-titulo{
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-
-.banner .container .left h1{
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-.banner .container .left .descricao-curso{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.banner .container .left a{
-    display: inline-block;
-    padding: 8px 20px;
-    text-align: center;
-    background-color: #191919;
-    color: #FFF;
-    font-weight: bold;
-    text-decoration: none;
-    width: 200px;
-    border-radius: 7px;
-    letter-spacing: 3px;
-    margin: 0 auto ;
-}
-
-
-.banner .container .right{
-    background-image:linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(../img/matematica.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-bottom-right-radius: 20px;
-}
 
 
 
 
-/* Estudantes */
-.estudantes .container {
-    margin-bottom: 20px;
-}
 
-.estudantes .container h2{
-    text-align: center;
-    color: orange;
-    font-size: 28px;
-    letter-spacing: 3px;
-    margin: 40px 0;
-}
 
-.estudantes .icons-area{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
-.estudantes .container .icon{
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.estudantes .container .icon span{
-    font-weight: 600;
-    text-align: center;
-    color: orange;
-    font-size: 18px;
-}
-
-.estudantes .container .head{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.estudantes .container .head .ball-area{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.estudantes .container .head img{
-    width: 100px;
-    height: 100px;
-}
-
-.estudantes .container .head .ball-area .ball{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
 
 
 
@@ -200,10 +39,10 @@ header .container .menu nav ul a{
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: orange;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     padding: 40px 0;
+    overflow-x: hidden;
 }
 
 
@@ -212,7 +51,83 @@ header .container .menu nav ul a{
     color: #FFF;
     font-weight: bold;
     letter-spacing: 3px;
+    margin-bottom: 50px;
 }
 
 
 /*Slider*/
+.slider{
+    width: 100%;
+}
+
+.slider input{
+    display: none;
+}
+
+
+.slider .slider-area{
+    width: 200%;
+    display: flex;
+    transition: all ease .2s;
+}
+
+.slider-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slider-item .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item .icon img{
+    width: 80px;
+}
+
+.slider-item span{
+    color: #FFF;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.slider-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.slider-nav label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0.2rem solid #191919;
+    transition: all ease .2s;
+}
+
+#slider-1:checked ~ .slider-area{
+    margin-left: 0%;
+}
+
+#slider-2:checked ~ .slider-area{
+    margin-left: -100%;
+}
+
+
+#slider-1:checked ~ .slider-nav .n1{
+    background-color: #191919;
+   border: 0.2rem solid #FFF;
+}
+
+#slider-2:checked ~ .slider-nav .n2{
+    background-color: #191919;
+   border: 0.2rem solid #FFF;
+}

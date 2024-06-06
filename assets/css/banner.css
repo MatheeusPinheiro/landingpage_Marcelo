@@ -1,0 +1,64 @@
+/* Banner */
+
+
+.banner .container{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.banner .container .left,
+.banner .container .right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 40px;
+}
+
+
+.banner .container .left{
+    background-color: rgba(245, 169, 27, 0.938);
+    color: #FFF;
+    border-top-left-radius: 20px;
+}
+
+
+.banner .container .left .incricao-titulo{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.banner .container .left h1{
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.banner .container .left .descricao-curso{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.banner .container .left a{
+    display: inline-block;
+    padding: 8px 20px;
+    text-align: center;
+    background-color: #191919;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    width: 200px;
+    border-radius: 7px;
+    letter-spacing: 3px;
+    margin: 0 auto ;
+}
+
+
+.banner .container .right{
+    background-image:linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(../img/matematica.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 20px;
+}
+

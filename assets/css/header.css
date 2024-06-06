@@ -1,0 +1,40 @@
+/* header */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+
+header .container .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .container .logo span{
+    color: orange;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+header .container .menu nav ul{
+    display: flex;
+}
+
+
+header .container .menu nav ul li{
+    list-style: none;
+}
+
+header .container .menu nav ul a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: orange;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
